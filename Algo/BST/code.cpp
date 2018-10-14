@@ -94,7 +94,7 @@ struct bst {
     }
     void show (node *t) {
         if (!t) return;
-        show (t->l);
+        show (t->l);  
         cout << t->key << ' ' << t->cnt << endl;
         show (t->r);
     }
