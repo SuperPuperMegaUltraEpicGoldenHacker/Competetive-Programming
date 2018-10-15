@@ -7,6 +7,7 @@
 # define pb push_back
 # define sz(a) (int)(a.size())
 # define vec vector
+# define me notme
 // shimkenttin kyzdary, dzyn, dzyn, dzyn...
 # define y1    Y_U_NO_y1
 # define left  Y_U_NO_left
