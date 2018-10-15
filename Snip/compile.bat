@@ -1,0 +1,1 @@
+﻿g++ -std=c++11 -Wall -Wextra -O2 -Wl,--stack=268435456
