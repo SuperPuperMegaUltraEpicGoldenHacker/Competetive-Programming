@@ -132,6 +132,7 @@ int main(){
             cout<<linkedList -> getNth(x)<< endl;
         }
     }
+    
     linkedList -> print();
     return 0;
 }
