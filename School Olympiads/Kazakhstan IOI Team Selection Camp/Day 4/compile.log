@@ -1,0 +1,807 @@
+b.cpp: In function 'void convexHull(ll, std::vector<pt>&)':
+b.cpp:73:11: error: no match for 'operator+' (operand types are 'std::vector<pt>' and 'int')
+   sort (a + 1, a + n + 1, [] (pt &a, pt &b) {
+           ^
+b.cpp:73:11: note: candidates are:
+In file included from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/stl_algobase.h:67:0,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/char_traits.h:39,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/ios:40,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/istream:38,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/sstream:38,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/complex:45,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/ccomplex:38,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/x86_64-w64-mingw32/bits/stdc++.h:52,
+                 from b.cpp:1:
+C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/stl_iterator.h:334:5: note: template<class _Iterator> std::reverse_iterator<_Iterator> std::operator+(typename std::reverse_iterator<_Iterator>::difference_type, const std::reverse_iterator<_Iterator>&)
+     operator+(typename reverse_iterator<_Iterator>::difference_type __n,
+     ^
+C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/stl_iterator.h:334:5: note:   template argument deduction/substitution failed:
+b.cpp:73:13: note:   mismatched types 'const std::reverse_iterator<_Iterator>' and 'int'
+   sort (a + 1, a + n + 1, [] (pt &a, pt &b) {
+             ^
+In file included from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/stl_algobase.h:67:0,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/char_traits.h:39,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/ios:40,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/istream:38,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/sstream:38,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/complex:45,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/ccomplex:38,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/x86_64-w64-mingw32/bits/stdc++.h:52,
+                 from b.cpp:1:
+C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/stl_iterator.h:1135:5: note: template<class _Iterator> std::move_iterator<_Iterator> std::operator+(typename std::move_iterator<_Iterator>::difference_type, const std::move_iterator<_Iterator>&)
+     operator+(typename move_iterator<_Iterator>::difference_type __n,
+     ^
+C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/stl_iterator.h:1135:5: note:   template argument deduction/substitution failed:
+b.cpp:73:13: note:   mismatched types 'const std::move_iterator<_Iterator>' and 'int'
+   sort (a + 1, a + n + 1, [] (pt &a, pt &b) {
+             ^
+In file included from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/string:52:0,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/locale_classes.h:40,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/ios_base.h:41,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/ios:42,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/istream:38,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/sstream:38,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/complex:45,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/ccomplex:38,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/x86_64-w64-mingw32/bits/stdc++.h:52,
+                 from b.cpp:1:
+C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/basic_string.h:2384:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_string<_CharT, _Traits, _Alloc> std::operator+(const std::basic_string<_CharT, _Traits, _Alloc>&, const std::basic_string<_CharT, _Traits, _Alloc>&)
+     operator+(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+     ^
+C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/basic_string.h:2384:5: note:   template argument deduction/substitution failed:
+b.cpp:73:13: note:   'std::vector<pt>' is not derived from 'const std::basic_string<_CharT, _Traits, _Alloc>'
+   sort (a + 1, a + n + 1, [] (pt &a, pt &b) {
+             ^
+In file included from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/string:53:0,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/locale_classes.h:40,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/ios_base.h:41,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/ios:42,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/istream:38,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/sstream:38,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/complex:45,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/ccomplex:38,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/x86_64-w64-mingw32/bits/stdc++.h:52,
+                 from b.cpp:1:
+C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/basic_string.tcc:692:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_string<_CharT, _Traits, _Alloc> std::operator+(const _CharT*, const std::basic_string<_CharT, _Traits, _Alloc>&)
+     operator+(const _CharT* __lhs,
+     ^
+C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/basic_string.tcc:692:5: note:   template argument deduction/substitution failed:
+b.cpp:73:13: note:   mismatched types 'const _CharT*' and 'std::vector<pt>'
+   sort (a + 1, a + n + 1, [] (pt &a, pt &b) {
+             ^
+In file included from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/string:53:0,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/locale_classes.h:40,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/ios_base.h:41,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/ios:42,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/istream:38,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/sstream:38,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/complex:45,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/ccomplex:38,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/x86_64-w64-mingw32/bits/stdc++.h:52,
+                 from b.cpp:1:
+C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/basic_string.tcc:708:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_string<_CharT, _Traits, _Alloc> std::operator+(_CharT, const std::basic_string<_CharT, _Traits, _Alloc>&)
+     operator+(_CharT __lhs, const basic_string<_CharT, _Traits, _Alloc>& __rhs)
+     ^
+C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/basic_string.tcc:708:5: note:   template argument deduction/substitution failed:
+b.cpp:73:13: note:   mismatched types 'const std::basic_string<_CharT, _Traits, _Alloc>' and 'int'
+   sort (a + 1, a + n + 1, [] (pt &a, pt &b) {
+             ^
+In file included from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/string:52:0,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/locale_classes.h:40,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/ios_base.h:41,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/ios:42,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/istream:38,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/sstream:38,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/complex:45,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/ccomplex:38,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/x86_64-w64-mingw32/bits/stdc++.h:52,
+                 from b.cpp:1:
+C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/basic_string.h:2421:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_string<_CharT, _Traits, _Alloc> std::operator+(const std::basic_string<_CharT, _Traits, _Alloc>&, const _CharT*)
+     operator+(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+     ^
+C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/basic_string.h:2421:5: note:   template argument deduction/substitution failed:
+b.cpp:73:13: note:   'std::vector<pt>' is not derived from 'const std::basic_string<_CharT, _Traits, _Alloc>'
+   sort (a + 1, a + n + 1, [] (pt &a, pt &b) {
+             ^
+In file included from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/string:52:0,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/locale_classes.h:40,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/ios_base.h:41,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/ios:42,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/istream:38,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/sstream:38,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/complex:45,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/ccomplex:38,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/x86_64-w64-mingw32/bits/stdc++.h:52,
+                 from b.cpp:1:
+C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/basic_string.h:2437:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_string<_CharT, _Traits, _Alloc> std::operator+(const std::basic_string<_CharT, _Traits, _Alloc>&, _CharT)
+     operator+(const basic_string<_CharT, _Traits, _Alloc>& __lhs, _CharT __rhs)
+     ^
+C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/basic_string.h:2437:5: note:   template argument deduction/substitution failed:
+b.cpp:73:13: note:   'std::vector<pt>' is not derived from 'const std::basic_string<_CharT, _Traits, _Alloc>'
+   sort (a + 1, a + n + 1, [] (pt &a, pt &b) {
+             ^
+In file included from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/string:52:0,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/locale_classes.h:40,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/ios_base.h:41,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/ios:42,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/istream:38,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/sstream:38,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/complex:45,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/ccomplex:38,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/x86_64-w64-mingw32/bits/stdc++.h:52,
+                 from b.cpp:1:
+C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/basic_string.h:2449:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_string<_CharT, _Traits, _Alloc> std::operator+(std::basic_string<_CharT, _Traits, _Alloc>&&, const std::basic_string<_CharT, _Traits, _Alloc>&)
+     operator+(basic_string<_CharT, _Traits, _Alloc>&& __lhs,
+     ^
+C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/basic_string.h:2449:5: note:   template argument deduction/substitution failed:
+b.cpp:73:13: note:   'std::vector<pt>' is not derived from 'std::basic_string<_CharT, _Traits, _Alloc>'
+   sort (a + 1, a + n + 1, [] (pt &a, pt &b) {
+             ^
+In file included from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/string:52:0,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/locale_classes.h:40,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/ios_base.h:41,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/ios:42,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/istream:38,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/sstream:38,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/complex:45,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/ccomplex:38,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/x86_64-w64-mingw32/bits/stdc++.h:52,
+                 from b.cpp:1:
+C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/basic_string.h:2455:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_string<_CharT, _Traits, _Alloc> std::operator+(const std::basic_string<_CharT, _Traits, _Alloc>&, std::basic_string<_CharT, _Traits, _Alloc>&&)
+     operator+(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+     ^
+C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/basic_string.h:2455:5: note:   template argument deduction/substitution failed:
+b.cpp:73:13: note:   'std::vector<pt>' is not derived from 'const std::basic_string<_CharT, _Traits, _Alloc>'
+   sort (a + 1, a + n + 1, [] (pt &a, pt &b) {
+             ^
+In file included from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/string:52:0,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/locale_classes.h:40,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/ios_base.h:41,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/ios:42,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/istream:38,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/sstream:38,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/complex:45,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/ccomplex:38,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/x86_64-w64-mingw32/bits/stdc++.h:52,
+                 from b.cpp:1:
+C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/basic_string.h:2461:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_string<_CharT, _Traits, _Alloc> std::operator+(std::basic_string<_CharT, _Traits, _Alloc>&&, std::basic_string<_CharT, _Traits, _Alloc>&&)
+     operator+(basic_string<_CharT, _Traits, _Alloc>&& __lhs,
+     ^
+C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/basic_string.h:2461:5: note:   template argument deduction/substitution failed:
+b.cpp:73:13: note:   'std::vector<pt>' is not derived from 'std::basic_string<_CharT, _Traits, _Alloc>'
+   sort (a + 1, a + n + 1, [] (pt &a, pt &b) {
+             ^
+In file included from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/string:52:0,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/locale_classes.h:40,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/ios_base.h:41,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/ios:42,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/istream:38,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/sstream:38,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/complex:45,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/ccomplex:38,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/x86_64-w64-mingw32/bits/stdc++.h:52,
+                 from b.cpp:1:
+C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/basic_string.h:2473:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_string<_CharT, _Traits, _Alloc> std::operator+(const _CharT*, std::basic_string<_CharT, _Traits, _Alloc>&&)
+     operator+(const _CharT* __lhs,
+     ^
+C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/basic_string.h:2473:5: note:   template argument deduction/substitution failed:
+b.cpp:73:13: note:   mismatched types 'const _CharT*' and 'std::vector<pt>'
+   sort (a + 1, a + n + 1, [] (pt &a, pt &b) {
+             ^
+In file included from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/string:52:0,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/locale_classes.h:40,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/ios_base.h:41,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/ios:42,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/istream:38,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/sstream:38,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/complex:45,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/ccomplex:38,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/x86_64-w64-mingw32/bits/stdc++.h:52,
+                 from b.cpp:1:
+C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/basic_string.h:2479:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_string<_CharT, _Traits, _Alloc> std::operator+(_CharT, std::basic_string<_CharT, _Traits, _Alloc>&&)
+     operator+(_CharT __lhs,
+     ^
+C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/basic_string.h:2479:5: note:   template argument deduction/substitution failed:
+b.cpp:73:13: note:   mismatched types 'std::basic_string<_CharT, _Traits, _Alloc>' and 'int'
+   sort (a + 1, a + n + 1, [] (pt &a, pt &b) {
+             ^
+In file included from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/string:52:0,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/locale_classes.h:40,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/ios_base.h:41,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/ios:42,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/istream:38,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/sstream:38,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/complex:45,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/ccomplex:38,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/x86_64-w64-mingw32/bits/stdc++.h:52,
+                 from b.cpp:1:
+C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/basic_string.h:2485:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_string<_CharT, _Traits, _Alloc> std::operator+(std::basic_string<_CharT, _Traits, _Alloc>&&, const _CharT*)
+     operator+(basic_string<_CharT, _Traits, _Alloc>&& __lhs,
+     ^
+C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/basic_string.h:2485:5: note:   template argument deduction/substitution failed:
+b.cpp:73:13: note:   'std::vector<pt>' is not derived from 'std::basic_string<_CharT, _Traits, _Alloc>'
+   sort (a + 1, a + n + 1, [] (pt &a, pt &b) {
+             ^
+In file included from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/string:52:0,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/locale_classes.h:40,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/ios_base.h:41,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/ios:42,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/istream:38,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/sstream:38,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/complex:45,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/ccomplex:38,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/x86_64-w64-mingw32/bits/stdc++.h:52,
+                 from b.cpp:1:
+C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/basic_string.h:2491:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_string<_CharT, _Traits, _Alloc> std::operator+(std::basic_string<_CharT, _Traits, _Alloc>&&, _CharT)
+     operator+(basic_string<_CharT, _Traits, _Alloc>&& __lhs,
+     ^
+C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/basic_string.h:2491:5: note:   template argument deduction/substitution failed:
+b.cpp:73:13: note:   'std::vector<pt>' is not derived from 'std::basic_string<_CharT, _Traits, _Alloc>'
+   sort (a + 1, a + n + 1, [] (pt &a, pt &b) {
+             ^
+In file included from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/ccomplex:38:0,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/x86_64-w64-mingw32/bits/stdc++.h:52,
+                 from b.cpp:1:
+C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/complex:321:5: note: template<class _Tp> std::complex<_Tp> std::operator+(const std::complex<_Tp>&, const std::complex<_Tp>&)
+     operator+(const complex<_Tp>& __x, const complex<_Tp>& __y)
+     ^
+C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/complex:321:5: note:   template argument deduction/substitution failed:
+b.cpp:73:13: note:   'std::vector<pt>' is not derived from 'const std::complex<_Tp>'
+   sort (a + 1, a + n + 1, [] (pt &a, pt &b) {
+             ^
+In file included from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/ccomplex:38:0,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/x86_64-w64-mingw32/bits/stdc++.h:52,
+                 from b.cpp:1:
+C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/complex:330:5: note: template<class _Tp> std::complex<_Tp> std::operator+(const std::complex<_Tp>&, const _Tp&)
+     operator+(const complex<_Tp>& __x, const _Tp& __y)
+     ^
+C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/complex:330:5: note:   template argument deduction/substitution failed:
+b.cpp:73:13: note:   'std::vector<pt>' is not derived from 'const std::complex<_Tp>'
+   sort (a + 1, a + n + 1, [] (pt &a, pt &b) {
+             ^
+In file included from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/ccomplex:38:0,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/x86_64-w64-mingw32/bits/stdc++.h:52,
+                 from b.cpp:1:
+C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/complex:339:5: note: template<class _Tp> std::complex<_Tp> std::operator+(const _Tp&, const std::complex<_Tp>&)
+     operator+(const _Tp& __x, const complex<_Tp>& __y)
+     ^
+C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/complex:339:5: note:   template argument deduction/substitution failed:
+b.cpp:73:13: note:   mismatched types 'const std::complex<_Tp>' and 'int'
+   sort (a + 1, a + n + 1, [] (pt &a, pt &b) {
+             ^
+In file included from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/ccomplex:38:0,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/x86_64-w64-mingw32/bits/stdc++.h:52,
+                 from b.cpp:1:
+C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/complex:440:5: note: template<class _Tp> std::complex<_Tp> std::operator+(const std::complex<_Tp>&)
+     operator+(const complex<_Tp>& __x)
+     ^
+C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/complex:440:5: note:   template argument deduction/substitution failed:
+b.cpp:73:13: note:   'std::vector<pt>' is not derived from 'const std::complex<_Tp>'
+   sort (a + 1, a + n + 1, [] (pt &a, pt &b) {
+             ^
+In file included from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/vector:65:0,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/random.h:34,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/random:49,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/stl_algo.h:66,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/algorithm:62,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/x86_64-w64-mingw32/bits/stdc++.h:64,
+                 from b.cpp:1:
+C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/stl_bvector.h:297:3: note: std::_Bit_iterator std::operator+(std::ptrdiff_t, const std::_Bit_iterator&)
+   operator+(ptrdiff_t __n, const _Bit_iterator& __x)
+   ^
+C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/stl_bvector.h:297:3: note:   no known conversion for argument 1 from 'std::vector<pt>' to 'std::ptrdiff_t {aka long long int}'
+C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/stl_bvector.h:387:3: note: std::_Bit_const_iterator std::operator+(std::ptrdiff_t, const std::_Bit_const_iterator&)
+   operator+(ptrdiff_t __n, const _Bit_const_iterator& __x)
+   ^
+C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/stl_bvector.h:387:3: note:   no known conversion for argument 1 from 'std::vector<pt>' to 'std::ptrdiff_t {aka long long int}'
+In file included from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/deque:64:0,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/x86_64-w64-mingw32/bits/stdc++.h:67,
+                 from b.cpp:1:
+C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/stl_deque.h:358:5: note: template<class _Tp, class _Ref, class _Ptr> std::_Deque_iterator<_Tp, _Ref, _Ptr> std::operator+(std::ptrdiff_t, const std::_Deque_iterator<_Tp, _Ref, _Ptr>&)
+     operator+(ptrdiff_t __n, const _Deque_iterator<_Tp, _Ref, _Ptr>& __x)
+     ^
+C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/stl_deque.h:358:5: note:   template argument deduction/substitution failed:
+b.cpp:73:13: note:   cannot convert 'a' (type 'std::vector<pt>') to type 'std::ptrdiff_t {aka long long int}'
+   sort (a + 1, a + n + 1, [] (pt &a, pt &b) {
+             ^
+In file included from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/valarray:587:0,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/x86_64-w64-mingw32/bits/stdc++.h:94,
+                 from b.cpp:1:
+C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/valarray_after.h:402:5: note: template<class _Dom1, class _Dom2> std::_Expr<std::_BinClos<std::__plus, std::_Expr, std::_Expr, _Dom1, _Dom2>, typename std::__fun<std::__plus, typename _Dom1::value_type>::result_type> std::operator+(const std::_Expr<_Dom1, typename _Dom1::value_type>&, const std::_Expr<_Dom2, typename _Dom2::value_type>&)
+     _DEFINE_EXPR_BINARY_OPERATOR(+, __plus)
+     ^
+C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/valarray_after.h:402:5: note:   template argument deduction/substitution failed:
+b.cpp:73:13: note:   'std::vector<pt>' is not derived from 'const std::_Expr<_Dom1, typename _Dom1::value_type>'
+   sort (a + 1, a + n + 1, [] (pt &a, pt &b) {
+             ^
+In file included from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/valarray:587:0,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/x86_64-w64-mingw32/bits/stdc++.h:94,
+                 from b.cpp:1:
+C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/valarray_after.h:402:5: note: template<class _Dom> std::_Expr<std::_BinClos<std::__plus, std::_Expr, std::_Constant, _Dom, typename _Dom::value_type>, typename std::__fun<std::__plus, typename _Dom1::value_type>::result_type> std::operator+(const std::_Expr<_Dom1, typename _Dom1::value_type>&, const typename _Dom::value_type&)
+     _DEFINE_EXPR_BINARY_OPERATOR(+, __plus)
+     ^
+C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/valarray_after.h:402:5: note:   template argument deduction/substitution failed:
+b.cpp:73:13: note:   'std::vector<pt>' is not derived from 'const std::_Expr<_Dom1, typename _Dom1::value_type>'
+   sort (a + 1, a + n + 1, [] (pt &a, pt &b) {
+             ^
+In file included from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/valarray:587:0,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/x86_64-w64-mingw32/bits/stdc++.h:94,
+                 from b.cpp:1:
+C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/valarray_after.h:402:5: note: template<class _Dom> std::_Expr<std::_BinClos<std::__plus, std::_Constant, std::_Expr, typename _Dom::value_type, _Dom>, typename std::__fun<std::__plus, typename _Dom1::value_type>::result_type> std::operator+(const typename _Dom::value_type&, const std::_Expr<_Dom1, typename _Dom1::value_type>&)
+     _DEFINE_EXPR_BINARY_OPERATOR(+, __plus)
+     ^
+C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/valarray_after.h:402:5: note:   template argument deduction/substitution failed:
+b.cpp:73:13: note:   mismatched types 'const std::_Expr<_Dom1, typename _Dom1::value_type>' and 'int'
+   sort (a + 1, a + n + 1, [] (pt &a, pt &b) {
+             ^
+In file included from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/valarray:587:0,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/x86_64-w64-mingw32/bits/stdc++.h:94,
+                 from b.cpp:1:
+C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/valarray_after.h:402:5: note: template<class _Dom> std::_Expr<std::_BinClos<std::__plus, std::_Expr, std::_ValArray, _Dom, typename _Dom::value_type>, typename std::__fun<std::__plus, typename _Dom1::value_type>::result_type> std::operator+(const std::_Expr<_Dom1, typename _Dom1::value_type>&, const std::valarray<typename _Dom::value_type>&)
+     _DEFINE_EXPR_BINARY_OPERATOR(+, __plus)
+     ^
+C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/valarray_after.h:402:5: note:   template argument deduction/substitution failed:
+b.cpp:73:13: note:   'std::vector<pt>' is not derived from 'const std::_Expr<_Dom1, typename _Dom1::value_type>'
+   sort (a + 1, a + n + 1, [] (pt &a, pt &b) {
+             ^
+In file included from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/valarray:587:0,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/x86_64-w64-mingw32/bits/stdc++.h:94,
+                 from b.cpp:1:
+C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/valarray_after.h:402:5: note: template<class _Dom> std::_Expr<std::_BinClos<std::__plus, std::_ValArray, std::_Expr, typename _Dom::value_type, _Dom>, typename std::__fun<std::__plus, typename _Dom1::value_type>::result_type> std::operator+(const std::valarray<typename _Dom::value_type>&, const std::_Expr<_Dom1, typename _Dom1::value_type>&)
+     _DEFINE_EXPR_BINARY_OPERATOR(+, __plus)
+     ^
+C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/valarray_after.h:402:5: note:   template argument deduction/substitution failed:
+b.cpp:73:13: note:   mismatched types 'const std::_Expr<_Dom1, typename _Dom1::value_type>' and 'int'
+   sort (a + 1, a + n + 1, [] (pt &a, pt &b) {
+             ^
+In file included from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/x86_64-w64-mingw32/bits/stdc++.h:94:0,
+                 from b.cpp:1:
+C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/valarray:1167:1: note: template<class _Tp> std::_Expr<std::_BinClos<std::__plus, std::_ValArray, std::_ValArray, _Tp, _Tp>, typename std::__fun<std::__plus, _Tp>::result_type> std::operator+(const std::valarray<_Tp>&, const std::valarray<_Tp>&)
+ _DEFINE_BINARY_OPERATOR(+, __plus)
+ ^
+C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/valarray:1167:1: note:   template argument deduction/substitution failed:
+b.cpp:73:13: note:   'std::vector<pt>' is not derived from 'const std::valarray<_Tp>'
+   sort (a + 1, a + n + 1, [] (pt &a, pt &b) {
+             ^
+In file included from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/x86_64-w64-mingw32/bits/stdc++.h:94:0,
+                 from b.cpp:1:
+C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/valarray:1167:1: note: template<class _Tp> std::_Expr<std::_BinClos<std::__plus, std::_ValArray, std::_Constant, _Tp, _Tp>, typename std::__fun<std::__plus, _Tp>::result_type> std::operator+(const std::valarray<_Tp>&, const _Tp&)
+ _DEFINE_BINARY_OPERATOR(+, __plus)
+ ^
+C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/valarray:1167:1: note:   template argument deduction/substitution failed:
+b.cpp:73:13: note:   'std::vector<pt>' is not derived from 'const std::valarray<_Tp>'
+   sort (a + 1, a + n + 1, [] (pt &a, pt &b) {
+             ^
+In file included from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/x86_64-w64-mingw32/bits/stdc++.h:94:0,
+                 from b.cpp:1:
+C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/valarray:1167:1: note: template<class _Tp> std::_Expr<std::_BinClos<std::__plus, std::_Constant, std::_ValArray, _Tp, _Tp>, typename std::__fun<std::__plus, _Tp>::result_type> std::operator+(const _Tp&, const std::valarray<_Tp>&)
+ _DEFINE_BINARY_OPERATOR(+, __plus)
+ ^
+C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/valarray:1167:1: note:   template argument deduction/substitution failed:
+b.cpp:73:13: note:   mismatched types 'const std::valarray<_Tp>' and 'int'
+   sort (a + 1, a + n + 1, [] (pt &a, pt &b) {
+             ^
+In file included from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/stl_algobase.h:67:0,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/char_traits.h:39,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/ios:40,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/istream:38,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/sstream:38,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/complex:45,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/ccomplex:38,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/x86_64-w64-mingw32/bits/stdc++.h:52,
+                 from b.cpp:1:
+C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/stl_iterator.h:918:5: note: template<class _Iterator, class _Container> __gnu_cxx::__normal_iterator<_Iterator, _Container> __gnu_cxx::operator+(typename __gnu_cxx::__normal_iterator<_Iterator, _Container>::difference_type, const __gnu_cxx::__normal_iterator<_Iterator, _Container>&)
+     operator+(typename __normal_iterator<_Iterator, _Container>::difference_type
+     ^
+C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/stl_iterator.h:918:5: note:   template argument deduction/substitution failed:
+b.cpp:73:13: note:   mismatched types 'const __gnu_cxx::__normal_iterator<_Iterator, _Container>' and 'int'
+   sort (a + 1, a + n + 1, [] (pt &a, pt &b) {
+             ^
+b.cpp:73:18: error: no match for 'operator+' (operand types are 'std::vector<pt>' and 'int')
+   sort (a + 1, a + n + 1, [] (pt &a, pt &b) {
+                  ^
+b.cpp:73:18: note: candidates are:
+In file included from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/stl_algobase.h:67:0,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/char_traits.h:39,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/ios:40,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/istream:38,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/sstream:38,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/complex:45,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/ccomplex:38,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/x86_64-w64-mingw32/bits/stdc++.h:52,
+                 from b.cpp:1:
+C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/stl_iterator.h:334:5: note: template<class _Iterator> std::reverse_iterator<_Iterator> std::operator+(typename std::reverse_iterator<_Iterator>::difference_type, const std::reverse_iterator<_Iterator>&)
+     operator+(typename reverse_iterator<_Iterator>::difference_type __n,
+     ^
+C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/stl_iterator.h:334:5: note:   template argument deduction/substitution failed:
+b.cpp:73:20: note:   mismatched types 'const std::reverse_iterator<_Iterator>' and 'int'
+   sort (a + 1, a + n + 1, [] (pt &a, pt &b) {
+                    ^
+In file included from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/stl_algobase.h:67:0,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/char_traits.h:39,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/ios:40,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/istream:38,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/sstream:38,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/complex:45,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/ccomplex:38,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/x86_64-w64-mingw32/bits/stdc++.h:52,
+                 from b.cpp:1:
+C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/stl_iterator.h:1135:5: note: template<class _Iterator> std::move_iterator<_Iterator> std::operator+(typename std::move_iterator<_Iterator>::difference_type, const std::move_iterator<_Iterator>&)
+     operator+(typename move_iterator<_Iterator>::difference_type __n,
+     ^
+C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/stl_iterator.h:1135:5: note:   template argument deduction/substitution failed:
+b.cpp:73:20: note:   mismatched types 'const std::move_iterator<_Iterator>' and 'int'
+   sort (a + 1, a + n + 1, [] (pt &a, pt &b) {
+                    ^
+In file included from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/string:52:0,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/locale_classes.h:40,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/ios_base.h:41,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/ios:42,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/istream:38,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/sstream:38,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/complex:45,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/ccomplex:38,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/x86_64-w64-mingw32/bits/stdc++.h:52,
+                 from b.cpp:1:
+C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/basic_string.h:2384:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_string<_CharT, _Traits, _Alloc> std::operator+(const std::basic_string<_CharT, _Traits, _Alloc>&, const std::basic_string<_CharT, _Traits, _Alloc>&)
+     operator+(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+     ^
+C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/basic_string.h:2384:5: note:   template argument deduction/substitution failed:
+b.cpp:73:20: note:   'std::vector<pt>' is not derived from 'const std::basic_string<_CharT, _Traits, _Alloc>'
+   sort (a + 1, a + n + 1, [] (pt &a, pt &b) {
+                    ^
+In file included from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/string:53:0,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/locale_classes.h:40,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/ios_base.h:41,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/ios:42,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/istream:38,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/sstream:38,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/complex:45,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/ccomplex:38,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/x86_64-w64-mingw32/bits/stdc++.h:52,
+                 from b.cpp:1:
+C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/basic_string.tcc:692:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_string<_CharT, _Traits, _Alloc> std::operator+(const _CharT*, const std::basic_string<_CharT, _Traits, _Alloc>&)
+     operator+(const _CharT* __lhs,
+     ^
+C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/basic_string.tcc:692:5: note:   template argument deduction/substitution failed:
+b.cpp:73:20: note:   mismatched types 'const _CharT*' and 'std::vector<pt>'
+   sort (a + 1, a + n + 1, [] (pt &a, pt &b) {
+                    ^
+In file included from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/string:53:0,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/locale_classes.h:40,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/ios_base.h:41,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/ios:42,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/istream:38,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/sstream:38,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/complex:45,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/ccomplex:38,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/x86_64-w64-mingw32/bits/stdc++.h:52,
+                 from b.cpp:1:
+C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/basic_string.tcc:708:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_string<_CharT, _Traits, _Alloc> std::operator+(_CharT, const std::basic_string<_CharT, _Traits, _Alloc>&)
+     operator+(_CharT __lhs, const basic_string<_CharT, _Traits, _Alloc>& __rhs)
+     ^
+C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/basic_string.tcc:708:5: note:   template argument deduction/substitution failed:
+b.cpp:73:20: note:   mismatched types 'const std::basic_string<_CharT, _Traits, _Alloc>' and 'int'
+   sort (a + 1, a + n + 1, [] (pt &a, pt &b) {
+                    ^
+In file included from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/string:52:0,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/locale_classes.h:40,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/ios_base.h:41,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/ios:42,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/istream:38,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/sstream:38,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/complex:45,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/ccomplex:38,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/x86_64-w64-mingw32/bits/stdc++.h:52,
+                 from b.cpp:1:
+C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/basic_string.h:2421:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_string<_CharT, _Traits, _Alloc> std::operator+(const std::basic_string<_CharT, _Traits, _Alloc>&, const _CharT*)
+     operator+(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+     ^
+C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/basic_string.h:2421:5: note:   template argument deduction/substitution failed:
+b.cpp:73:20: note:   'std::vector<pt>' is not derived from 'const std::basic_string<_CharT, _Traits, _Alloc>'
+   sort (a + 1, a + n + 1, [] (pt &a, pt &b) {
+                    ^
+In file included from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/string:52:0,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/locale_classes.h:40,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/ios_base.h:41,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/ios:42,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/istream:38,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/sstream:38,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/complex:45,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/ccomplex:38,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/x86_64-w64-mingw32/bits/stdc++.h:52,
+                 from b.cpp:1:
+C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/basic_string.h:2437:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_string<_CharT, _Traits, _Alloc> std::operator+(const std::basic_string<_CharT, _Traits, _Alloc>&, _CharT)
+     operator+(const basic_string<_CharT, _Traits, _Alloc>& __lhs, _CharT __rhs)
+     ^
+C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/basic_string.h:2437:5: note:   template argument deduction/substitution failed:
+b.cpp:73:20: note:   'std::vector<pt>' is not derived from 'const std::basic_string<_CharT, _Traits, _Alloc>'
+   sort (a + 1, a + n + 1, [] (pt &a, pt &b) {
+                    ^
+In file included from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/string:52:0,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/locale_classes.h:40,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/ios_base.h:41,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/ios:42,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/istream:38,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/sstream:38,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/complex:45,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/ccomplex:38,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/x86_64-w64-mingw32/bits/stdc++.h:52,
+                 from b.cpp:1:
+C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/basic_string.h:2449:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_string<_CharT, _Traits, _Alloc> std::operator+(std::basic_string<_CharT, _Traits, _Alloc>&&, const std::basic_string<_CharT, _Traits, _Alloc>&)
+     operator+(basic_string<_CharT, _Traits, _Alloc>&& __lhs,
+     ^
+C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/basic_string.h:2449:5: note:   template argument deduction/substitution failed:
+b.cpp:73:20: note:   'std::vector<pt>' is not derived from 'std::basic_string<_CharT, _Traits, _Alloc>'
+   sort (a + 1, a + n + 1, [] (pt &a, pt &b) {
+                    ^
+In file included from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/string:52:0,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/locale_classes.h:40,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/ios_base.h:41,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/ios:42,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/istream:38,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/sstream:38,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/complex:45,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/ccomplex:38,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/x86_64-w64-mingw32/bits/stdc++.h:52,
+                 from b.cpp:1:
+C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/basic_string.h:2455:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_string<_CharT, _Traits, _Alloc> std::operator+(const std::basic_string<_CharT, _Traits, _Alloc>&, std::basic_string<_CharT, _Traits, _Alloc>&&)
+     operator+(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+     ^
+C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/basic_string.h:2455:5: note:   template argument deduction/substitution failed:
+b.cpp:73:20: note:   'std::vector<pt>' is not derived from 'const std::basic_string<_CharT, _Traits, _Alloc>'
+   sort (a + 1, a + n + 1, [] (pt &a, pt &b) {
+                    ^
+In file included from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/string:52:0,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/locale_classes.h:40,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/ios_base.h:41,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/ios:42,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/istream:38,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/sstream:38,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/complex:45,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/ccomplex:38,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/x86_64-w64-mingw32/bits/stdc++.h:52,
+                 from b.cpp:1:
+C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/basic_string.h:2461:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_string<_CharT, _Traits, _Alloc> std::operator+(std::basic_string<_CharT, _Traits, _Alloc>&&, std::basic_string<_CharT, _Traits, _Alloc>&&)
+     operator+(basic_string<_CharT, _Traits, _Alloc>&& __lhs,
+     ^
+C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/basic_string.h:2461:5: note:   template argument deduction/substitution failed:
+b.cpp:73:20: note:   'std::vector<pt>' is not derived from 'std::basic_string<_CharT, _Traits, _Alloc>'
+   sort (a + 1, a + n + 1, [] (pt &a, pt &b) {
+                    ^
+In file included from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/string:52:0,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/locale_classes.h:40,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/ios_base.h:41,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/ios:42,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/istream:38,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/sstream:38,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/complex:45,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/ccomplex:38,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/x86_64-w64-mingw32/bits/stdc++.h:52,
+                 from b.cpp:1:
+C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/basic_string.h:2473:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_string<_CharT, _Traits, _Alloc> std::operator+(const _CharT*, std::basic_string<_CharT, _Traits, _Alloc>&&)
+     operator+(const _CharT* __lhs,
+     ^
+C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/basic_string.h:2473:5: note:   template argument deduction/substitution failed:
+b.cpp:73:20: note:   mismatched types 'const _CharT*' and 'std::vector<pt>'
+   sort (a + 1, a + n + 1, [] (pt &a, pt &b) {
+                    ^
+In file included from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/string:52:0,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/locale_classes.h:40,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/ios_base.h:41,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/ios:42,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/istream:38,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/sstream:38,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/complex:45,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/ccomplex:38,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/x86_64-w64-mingw32/bits/stdc++.h:52,
+                 from b.cpp:1:
+C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/basic_string.h:2479:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_string<_CharT, _Traits, _Alloc> std::operator+(_CharT, std::basic_string<_CharT, _Traits, _Alloc>&&)
+     operator+(_CharT __lhs,
+     ^
+C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/basic_string.h:2479:5: note:   template argument deduction/substitution failed:
+b.cpp:73:20: note:   mismatched types 'std::basic_string<_CharT, _Traits, _Alloc>' and 'int'
+   sort (a + 1, a + n + 1, [] (pt &a, pt &b) {
+                    ^
+In file included from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/string:52:0,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/locale_classes.h:40,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/ios_base.h:41,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/ios:42,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/istream:38,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/sstream:38,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/complex:45,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/ccomplex:38,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/x86_64-w64-mingw32/bits/stdc++.h:52,
+                 from b.cpp:1:
+C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/basic_string.h:2485:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_string<_CharT, _Traits, _Alloc> std::operator+(std::basic_string<_CharT, _Traits, _Alloc>&&, const _CharT*)
+     operator+(basic_string<_CharT, _Traits, _Alloc>&& __lhs,
+     ^
+C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/basic_string.h:2485:5: note:   template argument deduction/substitution failed:
+b.cpp:73:20: note:   'std::vector<pt>' is not derived from 'std::basic_string<_CharT, _Traits, _Alloc>'
+   sort (a + 1, a + n + 1, [] (pt &a, pt &b) {
+                    ^
+In file included from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/string:52:0,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/locale_classes.h:40,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/ios_base.h:41,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/ios:42,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/istream:38,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/sstream:38,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/complex:45,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/ccomplex:38,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/x86_64-w64-mingw32/bits/stdc++.h:52,
+                 from b.cpp:1:
+C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/basic_string.h:2491:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_string<_CharT, _Traits, _Alloc> std::operator+(std::basic_string<_CharT, _Traits, _Alloc>&&, _CharT)
+     operator+(basic_string<_CharT, _Traits, _Alloc>&& __lhs,
+     ^
+C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/basic_string.h:2491:5: note:   template argument deduction/substitution failed:
+b.cpp:73:20: note:   'std::vector<pt>' is not derived from 'std::basic_string<_CharT, _Traits, _Alloc>'
+   sort (a + 1, a + n + 1, [] (pt &a, pt &b) {
+                    ^
+In file included from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/ccomplex:38:0,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/x86_64-w64-mingw32/bits/stdc++.h:52,
+                 from b.cpp:1:
+C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/complex:321:5: note: template<class _Tp> std::complex<_Tp> std::operator+(const std::complex<_Tp>&, const std::complex<_Tp>&)
+     operator+(const complex<_Tp>& __x, const complex<_Tp>& __y)
+     ^
+C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/complex:321:5: note:   template argument deduction/substitution failed:
+b.cpp:73:20: note:   'std::vector<pt>' is not derived from 'const std::complex<_Tp>'
+   sort (a + 1, a + n + 1, [] (pt &a, pt &b) {
+                    ^
+In file included from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/ccomplex:38:0,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/x86_64-w64-mingw32/bits/stdc++.h:52,
+                 from b.cpp:1:
+C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/complex:330:5: note: template<class _Tp> std::complex<_Tp> std::operator+(const std::complex<_Tp>&, const _Tp&)
+     operator+(const complex<_Tp>& __x, const _Tp& __y)
+     ^
+C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/complex:330:5: note:   template argument deduction/substitution failed:
+b.cpp:73:20: note:   'std::vector<pt>' is not derived from 'const std::complex<_Tp>'
+   sort (a + 1, a + n + 1, [] (pt &a, pt &b) {
+                    ^
+In file included from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/ccomplex:38:0,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/x86_64-w64-mingw32/bits/stdc++.h:52,
+                 from b.cpp:1:
+C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/complex:339:5: note: template<class _Tp> std::complex<_Tp> std::operator+(const _Tp&, const std::complex<_Tp>&)
+     operator+(const _Tp& __x, const complex<_Tp>& __y)
+     ^
+C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/complex:339:5: note:   template argument deduction/substitution failed:
+b.cpp:73:20: note:   mismatched types 'const std::complex<_Tp>' and 'int'
+   sort (a + 1, a + n + 1, [] (pt &a, pt &b) {
+                    ^
+In file included from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/ccomplex:38:0,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/x86_64-w64-mingw32/bits/stdc++.h:52,
+                 from b.cpp:1:
+C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/complex:440:5: note: template<class _Tp> std::complex<_Tp> std::operator+(const std::complex<_Tp>&)
+     operator+(const complex<_Tp>& __x)
+     ^
+C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/complex:440:5: note:   template argument deduction/substitution failed:
+b.cpp:73:20: note:   'std::vector<pt>' is not derived from 'const std::complex<_Tp>'
+   sort (a + 1, a + n + 1, [] (pt &a, pt &b) {
+                    ^
+In file included from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/vector:65:0,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/random.h:34,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/random:49,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/stl_algo.h:66,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/algorithm:62,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/x86_64-w64-mingw32/bits/stdc++.h:64,
+                 from b.cpp:1:
+C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/stl_bvector.h:297:3: note: std::_Bit_iterator std::operator+(std::ptrdiff_t, const std::_Bit_iterator&)
+   operator+(ptrdiff_t __n, const _Bit_iterator& __x)
+   ^
+C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/stl_bvector.h:297:3: note:   no known conversion for argument 1 from 'std::vector<pt>' to 'std::ptrdiff_t {aka long long int}'
+C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/stl_bvector.h:387:3: note: std::_Bit_const_iterator std::operator+(std::ptrdiff_t, const std::_Bit_const_iterator&)
+   operator+(ptrdiff_t __n, const _Bit_const_iterator& __x)
+   ^
+C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/stl_bvector.h:387:3: note:   no known conversion for argument 1 from 'std::vector<pt>' to 'std::ptrdiff_t {aka long long int}'
+In file included from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/deque:64:0,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/x86_64-w64-mingw32/bits/stdc++.h:67,
+                 from b.cpp:1:
+C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/stl_deque.h:358:5: note: template<class _Tp, class _Ref, class _Ptr> std::_Deque_iterator<_Tp, _Ref, _Ptr> std::operator+(std::ptrdiff_t, const std::_Deque_iterator<_Tp, _Ref, _Ptr>&)
+     operator+(ptrdiff_t __n, const _Deque_iterator<_Tp, _Ref, _Ptr>& __x)
+     ^
+C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/stl_deque.h:358:5: note:   template argument deduction/substitution failed:
+b.cpp:73:20: note:   cannot convert 'a' (type 'std::vector<pt>') to type 'std::ptrdiff_t {aka long long int}'
+   sort (a + 1, a + n + 1, [] (pt &a, pt &b) {
+                    ^
+In file included from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/valarray:587:0,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/x86_64-w64-mingw32/bits/stdc++.h:94,
+                 from b.cpp:1:
+C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/valarray_after.h:402:5: note: template<class _Dom1, class _Dom2> std::_Expr<std::_BinClos<std::__plus, std::_Expr, std::_Expr, _Dom1, _Dom2>, typename std::__fun<std::__plus, typename _Dom1::value_type>::result_type> std::operator+(const std::_Expr<_Dom1, typename _Dom1::value_type>&, const std::_Expr<_Dom2, typename _Dom2::value_type>&)
+     _DEFINE_EXPR_BINARY_OPERATOR(+, __plus)
+     ^
+C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/valarray_after.h:402:5: note:   template argument deduction/substitution failed:
+b.cpp:73:20: note:   'std::vector<pt>' is not derived from 'const std::_Expr<_Dom1, typename _Dom1::value_type>'
+   sort (a + 1, a + n + 1, [] (pt &a, pt &b) {
+                    ^
+In file included from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/valarray:587:0,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/x86_64-w64-mingw32/bits/stdc++.h:94,
+                 from b.cpp:1:
+C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/valarray_after.h:402:5: note: template<class _Dom> std::_Expr<std::_BinClos<std::__plus, std::_Expr, std::_Constant, _Dom, typename _Dom::value_type>, typename std::__fun<std::__plus, typename _Dom1::value_type>::result_type> std::operator+(const std::_Expr<_Dom1, typename _Dom1::value_type>&, const typename _Dom::value_type&)
+     _DEFINE_EXPR_BINARY_OPERATOR(+, __plus)
+     ^
+C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/valarray_after.h:402:5: note:   template argument deduction/substitution failed:
+b.cpp:73:20: note:   'std::vector<pt>' is not derived from 'const std::_Expr<_Dom1, typename _Dom1::value_type>'
+   sort (a + 1, a + n + 1, [] (pt &a, pt &b) {
+                    ^
+In file included from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/valarray:587:0,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/x86_64-w64-mingw32/bits/stdc++.h:94,
+                 from b.cpp:1:
+C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/valarray_after.h:402:5: note: template<class _Dom> std::_Expr<std::_BinClos<std::__plus, std::_Constant, std::_Expr, typename _Dom::value_type, _Dom>, typename std::__fun<std::__plus, typename _Dom1::value_type>::result_type> std::operator+(const typename _Dom::value_type&, const std::_Expr<_Dom1, typename _Dom1::value_type>&)
+     _DEFINE_EXPR_BINARY_OPERATOR(+, __plus)
+     ^
+C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/valarray_after.h:402:5: note:   template argument deduction/substitution failed:
+b.cpp:73:20: note:   mismatched types 'const std::_Expr<_Dom1, typename _Dom1::value_type>' and 'int'
+   sort (a + 1, a + n + 1, [] (pt &a, pt &b) {
+                    ^
+In file included from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/valarray:587:0,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/x86_64-w64-mingw32/bits/stdc++.h:94,
+                 from b.cpp:1:
+C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/valarray_after.h:402:5: note: template<class _Dom> std::_Expr<std::_BinClos<std::__plus, std::_Expr, std::_ValArray, _Dom, typename _Dom::value_type>, typename std::__fun<std::__plus, typename _Dom1::value_type>::result_type> std::operator+(const std::_Expr<_Dom1, typename _Dom1::value_type>&, const std::valarray<typename _Dom::value_type>&)
+     _DEFINE_EXPR_BINARY_OPERATOR(+, __plus)
+     ^
+C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/valarray_after.h:402:5: note:   template argument deduction/substitution failed:
+b.cpp:73:20: note:   'std::vector<pt>' is not derived from 'const std::_Expr<_Dom1, typename _Dom1::value_type>'
+   sort (a + 1, a + n + 1, [] (pt &a, pt &b) {
+                    ^
+In file included from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/valarray:587:0,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/x86_64-w64-mingw32/bits/stdc++.h:94,
+                 from b.cpp:1:
+C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/valarray_after.h:402:5: note: template<class _Dom> std::_Expr<std::_BinClos<std::__plus, std::_ValArray, std::_Expr, typename _Dom::value_type, _Dom>, typename std::__fun<std::__plus, typename _Dom1::value_type>::result_type> std::operator+(const std::valarray<typename _Dom::value_type>&, const std::_Expr<_Dom1, typename _Dom1::value_type>&)
+     _DEFINE_EXPR_BINARY_OPERATOR(+, __plus)
+     ^
+C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/valarray_after.h:402:5: note:   template argument deduction/substitution failed:
+b.cpp:73:20: note:   mismatched types 'const std::_Expr<_Dom1, typename _Dom1::value_type>' and 'int'
+   sort (a + 1, a + n + 1, [] (pt &a, pt &b) {
+                    ^
+In file included from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/x86_64-w64-mingw32/bits/stdc++.h:94:0,
+                 from b.cpp:1:
+C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/valarray:1167:1: note: template<class _Tp> std::_Expr<std::_BinClos<std::__plus, std::_ValArray, std::_ValArray, _Tp, _Tp>, typename std::__fun<std::__plus, _Tp>::result_type> std::operator+(const std::valarray<_Tp>&, const std::valarray<_Tp>&)
+ _DEFINE_BINARY_OPERATOR(+, __plus)
+ ^
+C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/valarray:1167:1: note:   template argument deduction/substitution failed:
+b.cpp:73:20: note:   'std::vector<pt>' is not derived from 'const std::valarray<_Tp>'
+   sort (a + 1, a + n + 1, [] (pt &a, pt &b) {
+                    ^
+In file included from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/x86_64-w64-mingw32/bits/stdc++.h:94:0,
+                 from b.cpp:1:
+C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/valarray:1167:1: note: template<class _Tp> std::_Expr<std::_BinClos<std::__plus, std::_ValArray, std::_Constant, _Tp, _Tp>, typename std::__fun<std::__plus, _Tp>::result_type> std::operator+(const std::valarray<_Tp>&, const _Tp&)
+ _DEFINE_BINARY_OPERATOR(+, __plus)
+ ^
+C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/valarray:1167:1: note:   template argument deduction/substitution failed:
+b.cpp:73:20: note:   'std::vector<pt>' is not derived from 'const std::valarray<_Tp>'
+   sort (a + 1, a + n + 1, [] (pt &a, pt &b) {
+                    ^
+In file included from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/x86_64-w64-mingw32/bits/stdc++.h:94:0,
+                 from b.cpp:1:
+C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/valarray:1167:1: note: template<class _Tp> std::_Expr<std::_BinClos<std::__plus, std::_Constant, std::_ValArray, _Tp, _Tp>, typename std::__fun<std::__plus, _Tp>::result_type> std::operator+(const _Tp&, const std::valarray<_Tp>&)
+ _DEFINE_BINARY_OPERATOR(+, __plus)
+ ^
+C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/valarray:1167:1: note:   template argument deduction/substitution failed:
+b.cpp:73:20: note:   mismatched types 'const std::valarray<_Tp>' and 'int'
+   sort (a + 1, a + n + 1, [] (pt &a, pt &b) {
+                    ^
+In file included from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/stl_algobase.h:67:0,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/char_traits.h:39,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/ios:40,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/istream:38,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/sstream:38,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/complex:45,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/ccomplex:38,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/x86_64-w64-mingw32/bits/stdc++.h:52,
+                 from b.cpp:1:
+C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/stl_iterator.h:918:5: note: template<class _Iterator, class _Container> __gnu_cxx::__normal_iterator<_Iterator, _Container> __gnu_cxx::operator+(typename __gnu_cxx::__normal_iterator<_Iterator, _Container>::difference_type, const __gnu_cxx::__normal_iterator<_Iterator, _Container>&)
+     operator+(typename __normal_iterator<_Iterator, _Container>::difference_type
+     ^
+C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/bits/stl_iterator.h:918:5: note:   template argument deduction/substitution failed:
+b.cpp:73:20: note:   mismatched types 'const __gnu_cxx::__normal_iterator<_Iterator, _Container>' and 'int'
+   sort (a + 1, a + n + 1, [] (pt &a, pt &b) {
+                    ^
+b.cpp:100:10: error: return-statement with a value, in function returning 'void' [-fpermissive]
+   return 0;
+          ^
+b.cpp:70:6: warning: unused variable 'ans' [-Wunused-variable]
+   ll ans = 0;
+      ^
+b.cpp: In function 'int main()':
+b.cpp:117:20: error: 'calc' was not declared in this scope
+     ll val = calc(t);
+                    ^

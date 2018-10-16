@@ -1,0 +1,19 @@
+b.cpp: In member function 'void segtree::update(int, int, int, int, int)':
+b.cpp:68:9: error: 'l' was not declared in this scope
+     if (l <= tl && tr <= r && mx[v] <= x) {
+         ^
+b.cpp:68:26: error: 'r' was not declared in this scope
+     if (l <= tl && tr <= r && mx[v] <= x) {
+                          ^
+b.cpp:75:34: error: no matching function for call to 'segtree::update(int, int, int&, int&)'
+     update (2*v + 1, tmid+1, p, x);
+                                  ^
+b.cpp:75:34: note: candidates are:
+b.cpp:65:8: note: void segtree::update(int, int, int, int, int)
+   void update (int v, int tl, int tr, int p, int x) {
+        ^
+b.cpp:65:8: note:   candidate expects 5 arguments, 4 provided
+b.cpp:79:8: note: void segtree::update(int, int)
+   void update (int x, int y) {
+        ^
+b.cpp:79:8: note:   candidate expects 2 arguments, 4 provided
