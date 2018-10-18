@@ -1,0 +1,13 @@
+C:\Olymp\Competetive-Programming\Acm contests\ACM ICPC 2010�2011, NEERC, Northern Subregional Contest\k.cpp: In function 'int main()':
+C:\Olymp\Competetive-Programming\Acm contests\ACM ICPC 2010�2011, NEERC, Northern Subregional Contest\k.cpp:4:12: error: 'first' was not declared in this scope
+ # define x first
+            ^
+C:\Olymp\Competetive-Programming\Acm contests\ACM ICPC 2010�2011, NEERC, Northern Subregional Contest\k.cpp:108:51: note: in expansion of macro 'x'
+     ans = min (ans, dp[(1<<n) - 1][i] + min (min (x[i], w - x[i]), min (y[i], l - y[i]));
+                                                   ^
+C:\Olymp\Competetive-Programming\Acm contests\ACM ICPC 2010�2011, NEERC, Northern Subregional Contest\k.cpp:5:12: error: 'second' was not declared in this scope
+ # define y second
+            ^
+C:\Olymp\Competetive-Programming\Acm contests\ACM ICPC 2010�2011, NEERC, Northern Subregional Contest\k.cpp:108:73: note: in expansion of macro 'y'
+     ans = min (ans, dp[(1<<n) - 1][i] + min (min (x[i], w - x[i]), min (y[i], l - y[i]));
+                                                                         ^
