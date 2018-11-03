@@ -62,8 +62,6 @@ int main()
     //localInput();
   # endif
   Read_rap();
-  freopen (".in", "r",stdin);
-  freopen (".out","w",stdout);
   int x[2], y[2];
 
   int w;
@@ -73,6 +71,9 @@ int main()
   for (ld i = 0; i < w; i += 0.01)
     cout << i << ' ' << dist ({i, 0}, {x[0], y[0]}) + dist ({i, 0}, {x[1], y[1]}) << endl;
 
+  char c = 54;
+  c += 2;
+  cout << c;
 
   return 0;
 }
