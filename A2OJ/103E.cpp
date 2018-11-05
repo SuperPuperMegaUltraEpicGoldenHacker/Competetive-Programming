@@ -9,7 +9,7 @@
 # define sz(a) (int)(a.size())
 # define vec vector
 // shimkenttin kyzdary, dzyn, dzyn, dzyn..
-# d.efine y1    Y_U_NO_y1
+# define y1    Y_U_NO_y1
 # define left  Y_U_NO_left
 # define right Y_U_NO_right
 
@@ -50,23 +50,30 @@ struct flow {
   struct edge {
     int v, to, c, f;
     edge (int v = 0, int to = 0, int c = 0, int f = 0) : v(v), to(to), c(c), f(f) {}
-  }
+  };
+  int n, s, t;
 
   vec<edge> e;
   vec<ll> d, p;
+  vec<int> id[Sz];
+  bool used[Sz];
 
-  void add_edge (int u, int v, int c, int w) {
-    e.pb ({u, v, c, w, 0});  id[u].pb (sz(e) - 1);
-    e.pb ({v, u, 0, -w, 0}); id[v].pb (sz(e) - 1);
+  flow(int n = 0, int s = 0, int t = 0) : n(n), s(s), t(t) {
+    memset (used, 0, sizeof used);
   }
-  int dfs (int v = s, int flow = MX) {
+
+  void add_edge (int u, int v, int c) {
+    e.pb ({u, v, c, 0}); id[u].pb (sz(e) - 1);
+    e.pb ({v, u, 0, 0}); id[v].pb (sz(e) - 1);
+  }
+  int dfs (int v, int flow = MX) {
     used[v] = 1;
     if (v == t || !flow)
       return flow;
     for (int i : id[v]) {
       edge &E = e[i];
-      if (!used[E.to] && E.c < E.f) {
-        int f = min (flow, dfs (to, min (E.c - E.f)));
+      if (!used[E.to] && E.f < E.c) {
+        int f = dfs (E.to, min (E.c - E.f, flow));
         if (f) {
           e[i].f += f;
           e[i ^ 1].f -= f;
@@ -77,26 +84,31 @@ struct flow {
     return 0;
   }
   int max_flow () {
+    int res = 0;
     while (true) {
       memset (used, 0, (n + 1));
       int flow = 0;
-      while (flow = dfs ()) {
+      while (flow = dfs (s, MX)) 
         res += flow;
-      }
       if (!used[t])
-        return 0;
+        break;
     }
+    return res;
   }
 };
 struct khun {
+  int n;
   int timer;
-  bool used[Sz];
-  khun() {
+  int used[Sz];
+  vec<int> g[Sz];
+  int mt[Sz];
+
+  khun (int n = 0) : n(n) {
     memset (used, 0, sizeof used);
     timer = 0;
-    for (int i  1 )
+    memset (mt, 0, sizeof mt);
   }
-  bool try (int v) {
+  bool dfs (int v) {
     if (used[v] == timer)
       return 0;
     used[v] = timer;
@@ -108,7 +120,7 @@ struct khun {
       }
     }
     for (int to : g[v]) {
-      if (try (mt[to])) {
+      if (dfs (mt[to])) {
         mt[to] = v;
         mt[v] = to;
         return 1;
@@ -122,13 +134,16 @@ struct khun {
       run = 0;
       timer++;
       for (int i = 1; i <= n; i++) {
-        if (!mt[i] && try (i))
+        if (!mt[i] && dfs (i))
           run = 1, match++;
       }
     }
     return match;
   }
 };
+int n;
+
+int c[Sz];
 
 int main()
 {
@@ -137,20 +152,21 @@ int main()
   # endif
   Read_rap();
   cin >> n;
+
+  khun M (n);
   for (int i = 1; i <= n; i++) {
     int k;
     cin >> k;
     for (int j = 1; j <= k; j++) {
       int x; cin >> x;
       x += n;
-      g[i].pb (x);
-      g[x].pb (i);
+      M.g[i].pb (x);
+      M.g[x].pb (i);
     }
   }
   for (int i = 1; i <= n; i++)
     cin >> c[i];
 
-  khun M;
   int mch = M.max_match();
   if (mch != n) {
     cout << "no match";
@@ -158,19 +174,26 @@ int main()
   }
   int s = 1;
   int t = 2;
-  Flow F (n,package ist s, t);
+  flow F (n + 2, s, t);
 
   for (int v = 1; v <= n; v++) {
-    if (c[i] < 0)
-      T.add_edge (s, v + 2, -c[i]);
+    if (c[v] < 0)
+      F.add_edge (s, v + 2, -c[v]);
     else
-      T.add_edge (v + 2, t, c[i]);
-    for (int to : g[mt[v]]) {
-      if (i != to)
-        F.add_edge (v + 2, to + 2, MX);
+      F.add_edge (v + 2, t, c[v]);
+    for (int to : M.g[M.mt[v]]) {
+      if (v != to) {
+        F.add_edge (to + 2, v + 2, MX);
+
+      }
     }
   }
-  ll ans = accumulate (c + 1, c + n + 1, 0ll) - F.max_flow ();
+  ll mf = F.max_flow();
+  ll wsum = 0;
+  for (int i = 1; i <= n; i++)
+    if (c[i] < 0)
+      wsum += c[i];
+  ll ans = wsum + mf;
   cout << ans;
 
 

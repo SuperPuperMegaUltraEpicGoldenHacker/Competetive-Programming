@@ -46,7 +46,7 @@ void localInput(const char in[] = "s") {
   else
     cerr << "Warning: Input file not found" << endl;
 }
-struct Knuth {
+struct KMP {
 
   void prefix_function (int p[], const string &s) {
     p[0] = 0;
@@ -71,16 +71,38 @@ struct Knuth {
     }
     return 1;
   }
+  int distinct (string &s) {
+    int n = sz(s);
+    int p[n];
+    string t;
+    int count = 0;
+    for (int i = n - 1; i >= 0; i--) {
+      t = s.substr (i, n - i);
+      prefix_function (p, t);
+      int pref = *max_element (p, p + sz(t));
+      count += sz(t) - pref;
+    }
+    return count;
+  }
 };
 
 inline void E() {
-  Knuth T;
+  KMP T;
   while (true) {
     static string s;
     cin >> s;
     if (s[0] == '.')
       break;
     cout << T.period (s) << endl;
+  }
+}
+inline void F() {
+  KMP T;
+  int t;
+  cin >> t;
+  while (t--) {
+    static string s; cin >> s;
+    cout << T.distinct (s) << endl;
   }
 }
 
@@ -91,7 +113,7 @@ int main()
     //localInput();
   # endif
   Read_rap();
-  E();
+  F();
 
 
   return 0;
