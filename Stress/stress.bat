@@ -1,8 +1,8 @@
-@echo off   
-rename %1 fast%1
+::@echo off   
 
-g++ -std=c++11 -o fast -Wl,--stack=268435456 fast.cpp && g++ -std=c++11 -o slow -Wl,--stack=268435456 slow.cpp && g++ -std=c++11 -o gen -Wl,--stack=268435456 gen.cpp && echo Compiled
-pause
+set compile=g++ -std=c++11 -O2 -Wl,--stack=268435456
+%compile% -o fast fast.cpp && %compile% -o slow slow.cpp && %compile% -o gen gen.cpp && echo Compiled || echo Compliation failed! && exit
+
 
 set /a i=1
 :loop
