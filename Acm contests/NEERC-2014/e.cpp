@@ -54,28 +54,34 @@ void localInput(const char in[] = "s") {
     cerr << "Warning: Input file not found" << endl;
 }
 int n;
-int m;
-int f;
-int q;
 
-int a[Sz];
-
-bool b[1000][1010];
-
-int u[Sz];
-
+void dfs (int v, vec <int> s) {
+  vec<int> a, b, c;
+  for (int i : s) {
+    if (s[i] == 'F')
+  }
+}
 
 int main()
 {
   # ifdef Local
     //localInput();
   # endif
-  Read_rap(); 
-  files ("filter");
-  cin >> m >> f;
-  for (int ) 
-
+  Read_rap();
+  cin >> n;
+  for (int i = 1; i <= n; i++) {
+    cin >> c[i];
+    for (int j = 0; j < 3; j++)
+      cin >> a[i][j];
+  }
+  dfs (1);
 
   return 0;
 }
 
+
+
+
+
+
+// Coded by Z..
