@@ -6,7 +6,7 @@ There're some information about what I use everyday for practise.
 ## Usefil links for practise
  I attached my profiles to some links.
 
-* [Codeforces main account](https://codeforces.com/profile/ZzZZzzzZZZZZzzzzzzzz), [Codeforces alt account](https://codeforces.com/profile/supermegaultraepichacker)
+* [Codeforces main](https://codeforces.com/profile/ZzZZzzzZZZZZzzzzzzzz), [Codeforces alt](https://codeforces.com/profile/supermegaultraepichacker)
 
 * [A2oj](https://a2oj.com/profile?Username=One_Submission_Man)
 
