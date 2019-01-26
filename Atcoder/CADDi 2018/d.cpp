@@ -1,3 +1,4 @@
+﻿
 # include <bits/stdc++.h>
 
 # define x first
@@ -60,6 +61,24 @@ int main()
     //localInput();
   # endif
   Read_rap();
+  int n;
+  cin >> n;
+
+  int ans = 0;
+
+  int a[n + 1];
+  for (int i = 1; i <= n; i++) {
+    cin >> a[i];           
+    ans ^= a[i];
+  }
+  bool e = 1;
+  for (int i = 1; i <= n; i++)
+    if (a[i] % 2 == 1)
+      e = 0;
+
+    cout << (e ? "second" : "first");
+   
+
 
   return 0;
 }

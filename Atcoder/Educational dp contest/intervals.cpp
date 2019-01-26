@@ -1,3 +1,4 @@
+﻿
 # include <bits/stdc++.h>
 
 # define x first
@@ -52,7 +53,11 @@ void localInput(const char in[] = "s") {
   else
     cerr << "Warning: Input file not found" << endl;
 }
+int n;
 
+int m;
+               
+vec<int> seg[Sz];
 
 int main()
 {
@@ -60,6 +65,18 @@ int main()
     //localInput();
   # endif
   Read_rap();
+  
+  cin >> n >> m;
+  for (int i = 1; i <= m; i++) {
+    int l, r, x;
+    cin >> l >> r >> x;
+    seg[r].pb (mp (l, x));
+  }
+  l1 l2 l3 l4
+                     
+  for (int i = 1; i <= n; i++) {
+
+
 
   return 0;
 }

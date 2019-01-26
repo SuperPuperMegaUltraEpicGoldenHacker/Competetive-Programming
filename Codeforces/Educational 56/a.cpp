@@ -53,13 +53,32 @@ void localInput(const char in[] = "s") {
     cerr << "Warning: Input file not found" << endl;
 }
 
-
 int main()
 {
   # ifdef Local
     //localInput();
   # endif
   Read_rap();
+  int t;
+  cin >> t;
+  while (t--) {
+    string s;
+    cin >> s;
+    int j = -1;
+    for (int i = 1; i < sz(s); i++) {
+      if (s[i] != s[0])
+          j = i;
+    }
+    if (j == -1)
+        cout << -1 << endl;
+    else {
+      swap (s[j], s[sz(s) - 1]);
+
+      cout << s << endl;
+    }
+  }
+
+
 
   return 0;
 }

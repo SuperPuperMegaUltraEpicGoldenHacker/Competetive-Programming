@@ -52,7 +52,9 @@ void localInput(const char in[] = "s") {
   else
     cerr << "Warning: Input file not found" << endl;
 }
+ll a[Sz], b[Sz];
 
+int n;
 
 int main()
 {
@@ -60,6 +62,21 @@ int main()
     //localInput();
   # endif
   Read_rap();
+  cin >> n;
+  for (int i = 1; i <= n/2; i++) 
+    cin >> b[i];
+  a[n] = b[1];
+  for (int i = 2; i <= n/2; i++) {
+    int j = n-i+1;
+    ll x = min (a[j+1], b[i]);
+    x = min (x, b[i] - a[i-1]);
+    a[i] = b[i] - x;
+    a[j] = x;
+  }
+  for (int i = 1; i <= n; i++)
+    cout << a[i] << ' ';
+
+
 
   return 0;
 }

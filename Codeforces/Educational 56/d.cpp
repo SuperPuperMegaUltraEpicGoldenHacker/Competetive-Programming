@@ -25,8 +25,8 @@ typedef pair <int, int> pii;
 typedef long long ll;
 typedef long double ld;
 
-const int Mod = (int)1e9 + 7;
-const int MX = 1073741822;
+const int Mod = (int)998244353;
+const int MX = 998244353;
 const ll MXLL = 4e18;
 const int Sz = 1110111;
 // a pinch of soul
@@ -51,8 +51,67 @@ void localInput(const char in[] = "s") {
   }
   else
     cerr << "Warning: Input file not found" << endl;
+};
+vec<int> g[Sz];
+
+int n, m;
+
+int clr[Sz];
+
+int cnt[3];
+
+bool dfs (int v) {
+  cnt[clr[v]]++;
+  for (int to : g[v]) {
+    if (clr[to] && clr[to] == clr[v])
+      return 0;
+    if (!clr[to]) {
+      clr[to] = 3 - clr[v];
+      if (!dfs (to))
+        return 0;
+    }
+  }
+  return 1;
 }
 
+void solve() {
+
+  for (int i = 1; i <= n; i++)
+    g[i].clear();
+
+  
+  cin >> n >> m;
+
+  for (int i = 1; i <= m; i++) {
+    int x, y;
+    cin >> x >> y;
+    g[x].pb (y);
+    g[y].pb (x);
+  }
+  ll ans = 1;
+
+  static int pw[Sz];
+  pw[0] = 1;
+  for (int i = 1; i <= n; i++)
+    pw[i] = (pw[i - 1] * 2) % Mod;
+
+  memset (clr, 0, (n + 1) * 4);
+  for (int i = 1; i <= n; i++) {
+    if (!clr[i]) {
+      clr[i] = 1;
+      cnt[2] = cnt[1] = 0;
+      if (!dfs (i)) {
+        cout << 0 << endl;
+        return;
+      }
+      if (cnt[2] + cnt[1] == 1)
+        ans = (ans * 3) % Mod;
+      else  
+        ans = (ans * (pw[cnt[2]] + pw[cnt[1]] ) ) % Mod;
+    }
+  }
+  cout << ans << endl;
+}
 
 int main()
 {
@@ -60,6 +119,13 @@ int main()
     //localInput();
   # endif
   Read_rap();
+  int t;
+  cin >> t;
+  while (t--) {
+    solve();
+  }
+
+
 
   return 0;
 }

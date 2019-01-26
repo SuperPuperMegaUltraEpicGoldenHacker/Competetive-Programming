@@ -1,3 +1,4 @@
+﻿
 # include <bits/stdc++.h>
 
 # define x first
@@ -12,12 +13,7 @@
 # define left  Y_U_NO_left
 # define right Y_U_NO_right
 
-# ifdef Local
-# define debug(...) _dbg(#__VA_ARGS__, __VA_ARGS__)
-# else
-# define debug(...) (__VA_ARGS__)
-# define cerr if(0)cout
-# endif
+# define debug(x) cerr<<#x<<":="<<x
 
 using namespace std;
 
@@ -60,6 +56,17 @@ int main()
     //localInput();
   # endif
   Read_rap();
+
+  int m = 1e4, n = 40;
+  cout << m << ' ' << n << endl;
+                                
+  for (int i = 1; i <= m; i++) {  
+    if ((i-1) % 10 == 0) 
+      cout << 1 << endl;
+    else {
+      cout << 2 << ' ' << rand()%n + 1 << endl;
+    }
+  }
 
   return 0;
 }

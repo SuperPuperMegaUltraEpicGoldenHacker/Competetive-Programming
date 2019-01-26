@@ -1,3 +1,4 @@
+﻿
 # include <bits/stdc++.h>
 
 # define x first
@@ -60,6 +61,23 @@ int main()
     //localInput();
   # endif
   Read_rap();
+  ll n, p;
+  cin >> n >> p;
+  if (n == 1) {
+    cout << p;
+    return 0;
+  }
+  
+  ll ans = 1;
+  for (ll x = 2; x * x <= p; x++) {
+    ll y = x;               
+    for (int j = 1; j <= n && y <= p && p % y == 0; j++, y *= x) {
+      if (j == n)
+        ans = x;
+    }
+  }
+  cout << ans; 
+
 
   return 0;
 }

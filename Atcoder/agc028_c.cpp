@@ -53,13 +53,15 @@ void localInput(const char in[] = "s") {
     cerr << "Warning: Input file not found" << endl;
 }
 
-
 int main()
 {
   # ifdef Local
     //localInput();
   # endif
   Read_rap();
+
+
+
 
   return 0;
 }
