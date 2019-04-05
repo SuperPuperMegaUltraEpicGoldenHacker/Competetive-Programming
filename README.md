@@ -41,8 +41,8 @@ People on CF community advised. The problems have more concept, thinking and les
 ## Editors
 
 * Sublime Text
-** [FastOlympCoding](https://github.com/Jatana/FastOlympicCoding)
+-  [FastOlympCoding](https://github.com/Jatana/FastOlympicCoding)
 
-*Far maanger
+* Far maanger
 
 
