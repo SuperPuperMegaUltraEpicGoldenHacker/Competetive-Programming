@@ -30,7 +30,7 @@ People on CF community advised. The problems have more concept, thinking and les
 * [AOJ](http://aoj-icpc.ichyo.jp/?aoj_rivals=&sort2_order=desc&year_max=&source4=1&aoj_username=Zhanbolat&point_max=1200&sort1_order=asc&source2=1&source3=1&source1=1&point_min=100&sort2_by=num_aoj_acceptances&year_min=&sort1_by=point)
 - Japanese ACM ICPC collection problems that I use to practise for ACM ICPC.
 
-* [Problem Topics (Morass)](http://codeforces.com/blog/entry/55274) - a collection of problems for a particular topic.
+* [Problem Topics (Morass)](http://codeforces.com/blog/entry/55274) - collection of problems for a particular topics.
 
 ## Tools
 
