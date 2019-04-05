@@ -38,3 +38,11 @@ People on CF community advised. The problems have more concept, thinking and les
 
 [Comparator of solved problems in Atcoder](https://kenkoooo.com/atcoder/?user=Zhanbolat)
 
+## Editors
+
+* Sublime Text
+** [FastOlympCoding](https://github.com/Jatana/FastOlympicCoding)
+
+*Far maanger
+
+
