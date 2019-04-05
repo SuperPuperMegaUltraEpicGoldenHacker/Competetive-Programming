@@ -41,7 +41,7 @@ People on CF community advised. The problems have more concept, thinking and les
 ## Editors
 
 * Sublime Text
- - plugin to run and test [FastOlympCoding](https://github.com/Jatana/FastOlympicCoding)
+    - plugin to run and test [FastOlympCoding](https://github.com/Jatana/FastOlympicCoding)
 
 * Far maanger
 
