@@ -43,6 +43,6 @@ People on CF community advised. The problems have more concept, thinking and les
 * Sublime Text
     - [FastOlympCoding](https://github.com/Jatana/FastOlympicCoding) - plugin for running and testing
 
-* Far maanger
+* Far manager
 
 
