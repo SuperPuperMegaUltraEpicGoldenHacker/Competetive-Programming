@@ -46,10 +46,12 @@ People on CF community advised. The problems have more concept, thinking and les
     - Maybe the best for text editing but haven't used for this purpose.
 
 * Far manager
- - The best working environment, because files are more easily accessed than on other text editors, embeded command line also makes life easier.
+    - The best working environment, because files are more easily accessed than on other text editors, embeded command line also makes life easier.
+    
 * Visual Studio Code
- -Have terminal, but terrible work environment, but if I will be able to configure maybe it will the best. 
+     -Have terminal, but terrible work environment, but if I will be able to configure maybe it will the best. 
+
 * Visual Studio
- -Basically for creating .NET applications, good for OOP
+    -Basically for creating .NET applications, good for OOP
 
 
