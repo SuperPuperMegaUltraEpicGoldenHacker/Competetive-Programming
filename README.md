@@ -31,6 +31,7 @@ People on CF community advised. The problems have more concept, thinking and les
 - Japanese ACM ICPC collection problems that I use to practise for ACM ICPC.
 
 * [Problem Topics (Morass)](http://codeforces.com/blog/entry/55274) - collection of problems for a particular topics.
+* [Rating Tutorial from E8jkewjrlkj](http://codeforces.com/blog/entry/53341)
 
 ## Tools
 
@@ -42,7 +43,13 @@ People on CF community advised. The problems have more concept, thinking and les
 
 * Sublime Text
     - [FastOlympCoding](https://github.com/Jatana/FastOlympicCoding) - plugin for running and testing
+    - Maybe the best for text editing but haven't used for this purpose.
 
 * Far manager
+ - The best working environment, because files are more easily accessed than on other text editors, embeded command line also makes life easier.
+* Visual Studio Code
+ -Have terminal, but terrible work environment, but if I will be able to configure maybe it will the best. 
+* Visual Studio
+ -Basically for creating .NET applications, good for OOP
 
 
