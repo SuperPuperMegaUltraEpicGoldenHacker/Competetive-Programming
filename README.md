@@ -1,7 +1,7 @@
 # Competetive-Programming
 
 Here I started tracking my progress in competetive programming.
-There're some information about what I use everyday for practise.
+There're some information about what I use everyday.
 
 ## Usefil links for practise
  I attached my profiles to some links.
