@@ -6,20 +6,18 @@ There're some information about what I use everyday.
 ## Usefil links for practise
  I attached my profiles to some links.
 
-* [Codeforces main](https://codeforces.com/profile/ZzZZzzzZZZZZzzzzzzzz), [Codeforces alt](https://codeforces.com/profile/supermegaultraepichacker)
+* [Codeforces main](https://codeforces.com/profile/ZzZZzzzZZZZZzzzzzzzz), [Codeforces alt](https://codeforces.com/profile/supermegaultraepichacker) - contests, a good way of practicing.
 
-* [A2oj](https://a2oj.com/profile?Username=One_Submission_Man)
+* [A2oj](https://a2oj.com/profile?Username=One_Submission_Man) - Div2 E ladders are good.
 
-* [HackerRank](https://www.hackerrank.com/Zhanbolat)
+* [HackerRank](https://www.hackerrank.com/Zhanbolat) - Diverse problems, good editorials. Just great.
 
-* [Codechef](https://www.codechef.com/users/z_programmist)
-Long contest - I used to write them regularly. Usually half of the problems are more basic, and most of them are not original, mostly I saw them from Codeforces, but I think 
+* [Codechef](https://www.codechef.com/users/z_programmist)  I used to write Long challenges regularly. Usually half of the problems are more basic and well-known. Don't know if you can learn from there much, but still worth for contesting.
 
 * [Topcoder](https://www.topcoder.com/members/z-programmist/)
-The problems have more concept, thinking and less implementation.
+Topcoder's problems have more concept, thinking and less implementation.
 
-* [Atcoder](http://atcoder.jp/user/Zhanbolat)
- - contests are good, so I write regularly
+* [Atcoder](http://atcoder.jp/user/Zhanbolat) - more demand on problem solving and mathematical thinking.
 
 * [Csacademy](https://csacademy.com/user/supermegaultraepichacker)
 
