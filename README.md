@@ -16,7 +16,7 @@ There're some information about what I use everyday.
 Long contest - I used to write them regularly. Usually half of the problems are more basic, and most of them are not original, mostly I saw them from Codeforces, but I think 
 
 * [Topcoder](https://www.topcoder.com/members/z-programmist/)
-People on CF community advised. The problems have more concept, thinking and less implementation.
+The problems have more concept, thinking and less implementation.
 
 * [Atcoder](http://atcoder.jp/user/Zhanbolat)
  - contests are good, so I write regularly
@@ -28,7 +28,7 @@ People on CF community advised. The problems have more concept, thinking and les
 
 
 * [AOJ](http://aoj-icpc.ichyo.jp/?aoj_rivals=&sort2_order=desc&year_max=&source4=1&aoj_username=Zhanbolat&point_max=1200&sort1_order=asc&source2=1&source3=1&source1=1&point_min=100&sort2_by=num_aoj_acceptances&year_min=&sort1_by=point)
-- Japanese ACM ICPC collection problems that I to practise for ACM ICPC.
+- Japanese ACM ICPC collection problems for ractise for ACM ICPC.
 
 * [Problem Topics (Morass)](http://codeforces.com/blog/entry/55274) - collection of problems for a particular topics.
 * [Rating Tutorial from E8jkewjrlkj](http://codeforces.com/blog/entry/53341)
@@ -49,7 +49,7 @@ People on CF community advised. The problems have more concept, thinking and les
     - The best working environment, because files are more easily accessed than on other text editors, embeded command line also makes life easier.
     
 * Visual Studio Code
-     - Has terminal, but terrible work environment, but if I will be able to configure maybe it will the best. 
+     - Has terminal, but if I will be able to configure maybe I will switch to it.
 
 * Visual Studio
     - Basically for creating .NET applications, good for OOP
