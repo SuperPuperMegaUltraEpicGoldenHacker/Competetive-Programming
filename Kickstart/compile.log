@@ -1,0 +1,10 @@
+c2.cpp: In function 'int main()':
+c2.cpp:111:30: error: invalid conversion from 'int' to 'void*' [-fpermissive]
+     memset (t, 0, (n + 1) * 4);
+                              ^
+In file included from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/cstring:42:0,
+                 from C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/x86_64-w64-mingw32/bits/stdc++.h:48,
+                 from c2.cpp:2:
+C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include/string.h:43:18: note: initializing argument 1 of 'void* memset(void*, int, size_t)'
+   void * __cdecl memset(void *_Dst,int _Val,size_t _Size);
+                  ^

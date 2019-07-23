@@ -1,0 +1,1 @@
+g++ -std=c++11 -DLocal -Wall -Wextra -Wl,--stack=1073741824 !.! && echo Succesfully compiled
