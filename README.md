@@ -3,7 +3,6 @@
 There're some information about what I use to do everyday for practise.
 
 ## Useful links
- I attached my profiles to some links.
 
 * [Codeforces](codeforces.com) - The best platform for competitive programming, the great commmunity is here. From time to time I like to read blogs, tutorials and stay tuned for events. 
     [Codeforces main](https://codeforces.com/profile/ZzZZzzzZZZZZzzzzzzzz), [Codeforces alt](https://codeforces.com/profile/supermegaultraepichacker)
