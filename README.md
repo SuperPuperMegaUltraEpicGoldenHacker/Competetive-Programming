@@ -45,7 +45,7 @@ There're some information about what I use to do everyday for practise.
 
 * Far manager
     - The best working environment, because files are more easily accessed than on other text editors, embeded command line also makes life easier.
-    - design is not good as wished. Doesn't really matter to me while coding.
+    - design is not good as wished. Doesn't really matter while coding.
     
 * Visual Studio Code
      - Has terminal
