@@ -34,7 +34,7 @@ There're some information about what I use to do everyday for practise.
 [Comparator of solved problems in Atcoder(KENKOO)](https://kenkoooo.com/atcoder/?user=Zhanbolat)
 
   * I write contets on C++. 
-  * use cmd scripting - batch/bash
+  * sometimes use scripting(batch).
 
 ## Coding editors
 
